@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix-Form-Page</title>
+    <style>
+        
+        section{
+            color:white;
+            /* text-align: center; */
+            background-color: black;
+            width: 400px;
+            margin: auto;
+            height: 800px;
+            padding-top: 3px;
+            padding-left: 0px;
+
+        }
+        .solyazı{
+            text-align: left;
+        }
+        figure>input{
+            width: 300px;
+            height: 30px;
+            
+
+        }
+        select
+        {
+            width: 300px;
+            height: 30px;
+        }
+        .feedback{
+            /* width: 300px;
+            height: 100px; */
+            resize: none;
+            color: black;
+
+        }
+        .submit{
+            text-align: center;
+            color: white;
+            background-color: red;
+            margin-left: 100px;
+            width: 120px;
+            height:40px;
+            border-radius:  10px/20px;
+            font-size: 20px;
+            
+        }
+      
+    </style>
+    <script src="json.js"></script>
+</head>
+<body>
+    
+    <div>
+    <p class="başlık">NET<span>FLIX</span></p><br>
+    <p class="altbaşlık">Thank you for signing up aT Netflix. Tell us more about your self</p>    
+    </div>
+    <form>
+    <div>
+        <section>
+            <table>
+                    <figure>
+                    <label>Name</label><br><br>
+                    <input type="text" placeholder="Enter your name"><br><br>
+                    <label>Age</label><br><br>
+                    <input type="number" placeholder="Age"><br><br>
+                    <label>Email</label><br><br>
+                    <input type="email" placeholder="Enter your email"><br><br>
+                    <label>Content type</label><br><br>
+                    <select>
+                    <option>Series</option>
+                    </select><br><br>
+                </figure>
+                <figure>
+                    <label>Movie type</label><br>                        
+                        <div>
+                          <input type="checkbox" id="comedy" name="interest" value="comedy">
+                          <label for="comedy">Comedy</label>
+                        </div>
+                        <div>
+                          <input type="checkbox" id="music" name="interest" value="music">
+                          <label for="action">Action</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="music" name="interest" value="music" checked>
+                            <label for="romance">Romance</label>
+                          </div>
+                    </figure>  
+                    <figure>
+                        <label>Gender</label><br>                        
+                            <div>
+                              <input type="radio" id="gender" name="interest" value="male">
+                              <label for="male">Male</label>
+                            </div>
+                            <div>
+                              <input type="radio" id="gender" name="interest" value="female">
+                              <label for="female">Female</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="gender" name="interest" value="other" >
+                                <label for="other">Other</label>
+                              </div>
+                        </figure> 
+                        <figure>
+                        <div>
+                          <label for="feedbaack">Feed back</label><br><br>
+                          
+                          <textarea name="feedback" id="feedback" placeholder="Any comment" rows="5" cols="40"></textarea>
+
+                        </div>   
+                    </figure> 
+                    <figure>
+                        <div>
+                            <input type="submit" value="Submit" class="submit">
+                        </div>
+                    </figure>              
+            </table>
+            </section> 
+    </div>
+    </form>
+</body>
+</html>
